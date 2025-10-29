@@ -1,0 +1,51 @@
+[project]
+name = "iotpatch"
+version = "0.2.0"
+description = "IoT Security Hardening Toolkit for Edge Devices"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+
+authors = [
+    { name = "Soumyapriya Goswami", email = "soumyapriya.goswami.it2023@kgec.ac.in" }
+]
+
+keywords = [
+    "iot",
+    "security",
+    "firmware",
+    "mqtt",
+    "vulnerability-scanner",
+    "encryption",
+    "edge-computing"
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Security",
+    "Topic :: System :: Networking",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "pycryptodome>=3.19.0",
+    "paho-mqtt>=1.6.1",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/soumyapriyagoswami/iotpatch.git"
+
+
+[tool.setuptools]
+packages = ["iotpatch"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
